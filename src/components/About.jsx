@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, slideIn, textVariant } from "../utils/motion";
+import Tech from "./Tech";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -39,8 +40,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionDarkHeadText}>About Me</h2>
       </motion.div>
 
       <motion.p
@@ -48,17 +48,17 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        JavaScript, and expertise in frameworks like React, Node.js, and D3.js.
+        I'm a quick learner and collaborate closely with my peers to create
+        efficient, scalable, and user-friendly solutions that solve real-world
+        problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+      <motion.div variants={fadeIn("", "spring", 0.5, 0.75)}>
+        <div className="mt-20 flex flex-wrap gap-10">
+          <Tech />
+        </div>
+      </motion.div>
     </>
   );
 };

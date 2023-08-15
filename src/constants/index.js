@@ -97,20 +97,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -198,12 +186,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Support Desk",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Software solution that enables efficient management of customer inquiries and technical issues by creating, tracking, and resolving support tickets.",
     tags: [
       {
         name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux-toolkit",
         color: "blue-text-gradient",
       },
       {
@@ -211,53 +203,82 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image:
+      "https://github.com/nandirishav/project-assets/blob/main/portfolio/supportDeskCover.jpg?raw=true",
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Airbnb-ish",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Completely responsive Airbnb design with a modern UI, Search functionality including date picker feature along with smooth transitions",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "tailwindcss",
+        color: "pink-text-gradient",
       },
       {
-        name: "css",
+        name: "react-router-dom",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image:
+      "https://github.com/nandirishav/project-assets/blob/main/portfolio/airbnbIsh.jpg?raw=true",
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Amazon-ish",
+    description:
+      "Amazon design with a modern UI, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication (Firebase).",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:
+      "https://github.com/nandirishav/project-assets/blob/main/portfolio/amazonIsh.jpg?raw=true",
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Movies App",
+    description:
+      "This is a React application which displays all the recent movies along with their IMDB ratings . Users can search their favourite movies using the search box . Users can also select their favourite movies and can view them in the favourites page .",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux-toolkit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:
+      "https://github.com/nandirishav/project-assets/blob/main/portfolio/moviesApp.jpg?raw=true",
     source_code_link: "https://github.com/",
   },
 ];
