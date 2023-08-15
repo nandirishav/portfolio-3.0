@@ -212,6 +212,40 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
+    name: "Trello Clone",
+    description:
+      "Responsive Trello clone: Mimics task management, enables task creation along with images, enhancing teamwork and project efficiency.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "headlessui/react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "zustand",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:
+      "https://github.com/nandirishav/project-assets/blob/main/portfolio/trello_clone.jpg?raw=true",
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "Airbnb-ish",
     description:
       "Completely responsive Airbnb design with a modern UI, Search functionality including date picker feature along with smooth transitions",
@@ -258,7 +292,7 @@ const projects = [
   {
     name: "Movies App",
     description:
-      "This is a React application which displays all the recent movies along with their IMDB ratings . Users can search their favourite movies using the search box . Users can also select their favourite movies and can view them in the favourites page .",
+      "React app displaying recent movies with IMDB ratings. Search movies, add favorites, and view them on favorites page.",
     tags: [
       {
         name: "react",
