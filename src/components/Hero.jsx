@@ -1,14 +1,34 @@
 import { motion } from "framer-motion";
-
+import Lottie from "lottie-react";
+import animationData from "./lotties/developer.json";
 import { styles } from "../styles";
+import { fadeIn } from "../utils/motion";
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
+const style = {
+  height: 500,
+  width: 500,
+};
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[300px] mx-auto ${styles.paddingX} flex flex-row items-start justify-center gap-5`}
+        className={`absolute inset-0 top-[200px] mx-auto ${styles.paddingX} flex flex-row items-start justify-center gap-5`}
       >
-        <div className="flex items-center mt-5">
+        <div
+          className=" 
+       flex flex-col justify-center lg:flex-row lg:items-center  gap-8 px-5 xs:px-10 sm:px-12 md:px-24
+        "
+        >
           {/* left */}
           <div className="w-full">
             <p className="font-roboto text-blue-500 pb-1.5 sm:pb-3">
@@ -51,7 +71,22 @@ const Hero = () => {
             </div>
           </div>
           {/* right */}
-          <div className="w-full"></div>
+          <motion.div
+            // initial={{ opacity: 0, scale: 0.5 }}
+            // animate={{ opacity: 1, scale: 1 }}
+            // transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 1.25, translateZ: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            // exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="w-full"
+          >
+            <Lottie
+              animationData={animationData}
+              autoPlay={true}
+              style={style}
+            />
+          </motion.div>
         </div>
       </div>
 
