@@ -43,16 +43,29 @@ const About = () => {
         <h2 className={styles.sectionDarkHeadText}>About Me</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and D3.js.
-        I'm a quick learner and collaborate closely with my peers to create
-        efficient, scalable, and user-friendly solutions that solve real-world
-        problems. Let's work together to bring your ideas to life!
-      </motion.p>
+      <motion.div className="w-full flex flex-col justify-center lg:flex-row items-center gap-20 lg:gap-10">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] w-full lg:w-3/5 leading-[30px]"
+        >
+          I'm a skilled software developer with experience in TypeScript and
+          JavaScript, and expertise in frameworks like React, Node.js, and
+          D3.js. I'm a quick learner and collaborate closely with my peers to
+          create efficient, scalable, and user-friendly solutions that solve
+          real-world problems. Let's work together to bring your ideas to life!
+        </motion.p>
+
+        <motion.div
+          variants={fadeIn("", "", 0.1, 1)}
+          className="w-full md:w-2/3 lg:w-2/5 rounded-full"
+        >
+          <img
+            className="rounded-full"
+            src="https://github.com/nandirishav/project-assets/blob/main/portfolio/Me.jpg?raw=true"
+            alt=""
+          />
+        </motion.div>
+      </motion.div>
 
       <motion.div variants={fadeIn("", "spring", 0.5, 0.75)}>
         <div className="mt-20 flex flex-wrap gap-10">

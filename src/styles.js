@@ -2,6 +2,7 @@ const styles = {
   paddingX: "px-5 xs:px-10 sm:px-12 md:px-24",
   paddingY: "sm:py-16 py-6",
   padding: "sm:px-16 px-6 sm:py-16 py-10",
+  navPadding: "sm:px-16 px-6 xs:px-10",
 
   heroHeadText:
     "font-black text-black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
