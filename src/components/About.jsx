@@ -60,7 +60,7 @@ const About = () => {
           className="w-full md:w-2/3 lg:w-2/5 rounded-full"
         >
           <img
-            className="rounded-full"
+            className="rounded-full w-full transition-all duration-300 hover:shadow-xl hover:shadow-blue-200 hover:-translate-y-1"
             src="https://github.com/nandirishav/project-assets/blob/main/portfolio/Me.jpg?raw=true"
             alt=""
           />
