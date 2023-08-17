@@ -24,11 +24,7 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[200px] max-w-7xl mx-auto ${styles.padding} flex flex-row items-start justify-center gap-5`}
       >
-        <div
-          className=" 
-       flex flex-col justify-center lg:flex-row lg:items-center  gap-8 
-        "
-        >
+        <div className="w-full flex flex-col justify-center lg:flex-row lg:items-center  gap-8">
           {/* left */}
           <div className="w-full">
             <p className="font-roboto text-blue-500 pb-1.5 sm:pb-3">
