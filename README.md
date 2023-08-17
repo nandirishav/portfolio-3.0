@@ -1,4 +1,4 @@
-# Web Developer Portfolio
+                                                      # Web Developer Portfolio
 
 Welcome to my web developer portfolio! This repository showcases a collection of my projects, skills, and experiences as a web developer. Feel free to explore the various projects and technologies I've worked with. If you have any questions or would like to collaborate, don't hesitate to contact me.
 
@@ -17,17 +17,22 @@ I am a passionate and dedicated web developer with a strong foundation in front-
 ### Project 1: Support Desk Ticketing System
 A fully responsive software solution that enables efficient management of customer inquiries and technical issues by creating, tracking, and resolving support tickets.
 
-![Support Desk]('https://github.com/nandirishav/project-assets/blob/main/portfolio/trello_clone.jpg?raw=true')
+![Support Desk](https://github.com/nandirishav/project-assets/blob/main/portfolio/supportDeskCover.jpg?raw=true)
 
 ### Project 2: Trello Clone
 Responsive Trello clone: Mimics task management, enables task creation along with images, enhancing teamwork and project efficiency.
 
-![Trello Clone]('https://github.com/nandirishav/project-assets/blob/main/portfolio/trello_clone.jpg?raw=true')
+![Trello Clone](https://github.com/nandirishav/project-assets/blob/main/portfolio/trello_clone.jpg?raw=true)
 
 ### Project 3: Amazon-ish
 Amazon design with a modern UI, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication (Firebase).
 
-![Amazon-ish]('https://github.com/nandirishav/project-assets/blob/main/portfolio/amazonIsh.jpg?raw=true")
+![Amazon-ish](https://github.com/nandirishav/project-assets/blob/main/portfolio/amazonIsh.jpg?raw=true)
+
+### Project 4: Airbnb-ish
+Completely responsive Airbnb design with a modern UI, Search functionality including date picker feature along with smooth transitions
+
+![Airbnb-ish](https://github.com/nandirishav/project-assets/blob/main/portfolio/airbnbIsh.jpg?raw=true)
 
 ## Skills
 
