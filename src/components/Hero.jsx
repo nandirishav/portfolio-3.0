@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[200px] max-w-7xl mx-auto ${styles.padding} flex flex-row items-start justify-center gap-5`}
+        className={`absolute inset-0 sm:top-[200px] top-40 max-w-7xl mx-auto ${styles.padding} flex flex-row items-start justify-center gap-5`}
       >
         <div className="w-full flex flex-col justify-center lg:flex-row lg:items-center  gap-8">
           {/* left */}
@@ -80,7 +80,7 @@ const Hero = () => {
             <Lottie
               animationData={animationData}
               autoPlay={true}
-              style={style}
+              // style={style}
             />
           </motion.div>
         </div>

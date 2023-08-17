@@ -15,7 +15,7 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="w-full overflow-x-hidden relative z-0 bg-primary">
         <div>
           <Navbar />
           <Hero />
