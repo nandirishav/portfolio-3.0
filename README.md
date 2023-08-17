@@ -48,6 +48,6 @@ Thank you for taking the time to explore my portfolio. If you're interested in c
 
 - **Email**: [rishavnandi06@gmail.com](mailto:rishavnandi06@gmail.com)
 - **LinkedIn**: [Rishav Nandi](https://www.linkedin.com/in/nandirishav/)
-- **Portfolio Website**: [www.yourportfolio.com](https://www.yourportfolio.com)
+- **Portfolio Website**: [https://rishavnandi.vercel.app/](https://rishavnandi.vercel.app/)
 
 Let's create something amazing together!
