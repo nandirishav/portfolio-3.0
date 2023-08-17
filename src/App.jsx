@@ -15,11 +15,11 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="w-full overflow-x-hidden relative z-0 bg-primary">
-        <div>
-          <Navbar />
-          <Hero />
-        </div>
+      <div className="w-full min-h-screen overflow-x-hidden relative z-0 bg-primary">
+        {/* <div> */}
+        <Navbar />
+        <Hero />
+        {/* </div> */}
         <About />
         <Works />
         <div className="relative z-0">
