@@ -4,25 +4,11 @@ import animationData from "./lotties/developer.json";
 import { styles } from "../styles";
 import { fadeIn } from "../utils/motion";
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
-
-const style = {
-  height: 500,
-  width: 500,
-};
-
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 sm:top-[200px] top-40 max-w-7xl mx-auto ${styles.padding} flex flex-row items-start justify-center gap-5`}
+        className={`absolute inset-0 sm:top-[200px] top-24 max-w-7xl mx-auto ${styles.padding} flex flex-row items-start justify-center gap-5`}
       >
         <div className="w-full flex flex-col justify-center lg:flex-row lg:items-center  gap-8">
           {/* left */}
@@ -77,11 +63,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="w-full"
           >
-            <Lottie
-              animationData={animationData}
-              autoPlay={true}
-              // style={style}
-            />
+            <Lottie animationData={animationData} autoPlay={true} />
           </motion.div>
         </div>
       </div>
