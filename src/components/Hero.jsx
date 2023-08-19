@@ -32,8 +32,8 @@ const Hero = () => {
             </p>
             <div>
               <a
-                href="/Resume.pdf"
-                download=""
+                href="https://docs.google.com/document/d/1bwtVgXVskXxwkC4Fe4aY_H9Po5lQsOP-N52_uy8mDWY/edit?usp=sharing"
+                download="RishavNandi_RESUME"
                 target="_blank"
                 className="border cursor-pointer text-sm sm:text-base inline-flex gap-2 items-center justify-center px-6 sm:px-10 py-2.5 sm:py-4 rounded  hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-200 border-blue-400 transition-all font-medium "
               >
