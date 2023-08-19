@@ -13,17 +13,15 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
 } from "../assets";
+import Github from "../assets/icons/github";
+import Instagram from "../assets/icons/instagram";
+import Linkedin from "../assets/icons/linkedin";
+import Twitter from "../assets/icons/twitter";
 
 export const navLinks = [
   {
@@ -317,4 +315,23 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socials = [
+  {
+    icon: Github,
+    socialLink: "https://github.com/nandirishav",
+  },
+  {
+    icon: Linkedin,
+    socialLink: "https://www.linkedin.com/in/nandirishav/",
+  },
+  {
+    icon: Instagram,
+    socialLink: "https://www.instagram.com/the_name_is_rishi/",
+  },
+  {
+    icon: Twitter,
+    socialLink: "https://twitter.com/nandi_rishi",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, socials };
