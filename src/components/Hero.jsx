@@ -2,7 +2,26 @@ import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "./lotties/developer.json";
 import { styles } from "../styles";
-import { fadeIn } from "../utils/motion";
+import { introChild, introContainer } from "../utils/motion";
+
+const intro = [
+  {
+    text: "Hi, my name is",
+    styles: "font-roboto text-blue-500 pb-1.5 sm:pb-3",
+  },
+  {
+    text: "Rishav Nandi.",
+    styles: "text-4xl sm:text-5xl text-slate-900 font-extrabold pb-1.5 sm:pb-3",
+  },
+  {
+    text: "I build things for the web.",
+    styles: "text-2xl sm:text-4xl text-slate-600 font-extrabold pb-2.5 sm:pb-5",
+  },
+  {
+    text: "I'm a Full-Stack Developer based in West Bengal, India. I enjoy working on every aspect of web development, from the user interface to the server logic.",
+    styles: " text-sm sm:text-base text-slate-600 font-medium pb-4 sm:pb-10",
+  },
+];
 
 const Hero = () => {
   return (
@@ -14,22 +33,21 @@ const Hero = () => {
       >
         <div className="w-full flex flex-col justify-center lg:flex-row lg:items-center  gap-8">
           {/* left */}
-          <div className="w-full">
-            <p className="font-roboto text-blue-500 pb-1.5 sm:pb-3">
-              {" "}
-              Hi, my name is
-            </p>
-            <p className="text-4xl sm:text-5xl text-slate-900 font-extrabold pb-1.5 sm:pb-3">
-              Rishav Nandi.
-            </p>
-            <p className="text-2xl sm:text-4xl text-slate-600 font-extrabold pb-2.5 sm:pb-5">
-              I build things for the web.
-            </p>
-            <p className=" text-sm sm:text-base text-slate-600 font-medium pb-4 sm:pb-10">
-              I'm a Full-Stack Developer based in West Bengal, India. I enjoy
-              working on every aspect of web development, from the user
-              interface to the server logic.
-            </p>
+          <motion.div
+            variants={introContainer}
+            initial="hidden"
+            animate="visible"
+            className="w-full"
+          >
+            {intro.map((ele, index) => (
+              <motion.p
+                key={index}
+                variants={introChild}
+                className={ele.styles}
+              >
+                {ele.text}
+              </motion.p>
+            ))}
             <div>
               <a
                 href="https://docs.google.com/document/d/1bwtVgXVskXxwkC4Fe4aY_H9Po5lQsOP-N52_uy8mDWY/edit?usp=sharing"
@@ -53,7 +71,7 @@ const Hero = () => {
                 </button>
               </a>
             </div>
-          </div>
+          </motion.div>
           {/* right */}
           <motion.div
             // initial={{ opacity: 0, scale: 0.5 }}
