@@ -6,7 +6,22 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { introChild, workIntroContainer } from "../utils/motion";
+
+const textData = [
+  {
+    text: "My work",
+    styles: `${styles.sectionSubText}`,
+  },
+  {
+    text: "Projects.",
+    styles: `${styles.sectionDarkHeadText}`,
+  },
+  {
+    text: " Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies and manage projects effectively.",
+    styles: "mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]",
+  },
+];
 
 const ProjectCard = ({
   index,
@@ -72,25 +87,19 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <div
-      //  variants={textVariant()}
+      <motion.div
+        variants={workIntroContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
       >
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionDarkHeadText}`}>Projects.</h2>
-      </div>
-
-      <div className="w-full flex">
-        <p
-          // variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
-        </p>
-      </div>
+        {textData.map((ele, index) => (
+          <motion.p key={index} variants={introChild} className={ele.styles}>
+            {ele.text}
+          </motion.p>
+        ))}
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
