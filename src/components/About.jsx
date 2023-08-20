@@ -67,11 +67,14 @@ const About = () => {
         </motion.div>
       </motion.div>
 
-      <motion.div variants={fadeIn("", "spring", 0.5, 0.75)}>
-        <div className="mt-20 flex flex-wrap gap-10">
-          <Tech />
-        </div>
-      </motion.div>
+      <div
+        // variants={introContainer}
+        // initial="hidden"
+        // animate="visible"
+        className="mt-20 flex flex-wrap gap-10"
+      >
+        <Tech />
+      </div>
     </>
   );
 };
