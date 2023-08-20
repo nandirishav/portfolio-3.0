@@ -96,6 +96,15 @@ export const introContainer = {
     transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
   }),
 };
+export const workIntroContainer = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: (i = 1) => ({
+    opacity: 1,
+    transition: { staggerChildren: 0.12, delayChildren: 0.08 * i },
+  }),
+};
 export const introChild = {
   visible: {
     opacity: 1,
