@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import FloatingContact from "./components/FloatingContact";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Contact />
         {/* <StarsCanvas /> */}
         {/* </div> */}
+        <FloatingContact />
       </div>
     </BrowserRouter>
   );
