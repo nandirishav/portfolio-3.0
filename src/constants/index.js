@@ -185,8 +185,7 @@ const testimonials = [
 const projects = [
   {
     name: "Google Doc-ish",
-    description:
-      "Online document editor similar to Google Docs .",
+    description: "Online document editor similar to Google Docs .",
     tags: [
       {
         name: "nextjs",
@@ -208,7 +207,7 @@ const projects = [
     image:
       "https://github.com/nandirishav/project-assets/blob/main/portfolio/google-docs.jpg?raw=true",
     source_code_link: "https://github.com/nandirishav/google-docs-clone",
-  }
+  },
   {
     name: "Support Desk",
     description:
@@ -233,7 +232,8 @@ const projects = [
     ],
     image:
       "https://github.com/nandirishav/project-assets/blob/main/portfolio/supportDeskCover.jpg?raw=true",
-    source_code_link: "https://github.com/nandirishav/support-ticketing-system-app",
+    source_code_link:
+      "https://github.com/nandirishav/support-ticketing-system-app",
   },
   {
     name: "Trello Clone",
