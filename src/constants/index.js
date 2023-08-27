@@ -184,6 +184,31 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Google Doc-ish",
+    description: "Online document editor similar to Google Docs .",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "draft-js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next-auth",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image:
+      "https://github.com/nandirishav/project-assets/blob/main/portfolio/google-docs.jpg?raw=true",
+    source_code_link: "https://github.com/nandirishav/google-docs-clone",
+  },
+  {
     name: "Support Desk",
     description:
       "Software solution that enables efficient management of customer inquiries and technical issues by creating, tracking, and resolving support tickets.",
@@ -207,7 +232,8 @@ const projects = [
     ],
     image:
       "https://github.com/nandirishav/project-assets/blob/main/portfolio/supportDeskCover.jpg?raw=true",
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/nandirishav/support-ticketing-system-app",
   },
   {
     name: "Trello Clone",
@@ -241,7 +267,7 @@ const projects = [
     ],
     image:
       "https://github.com/nandirishav/project-assets/blob/main/portfolio/trello_clone.jpg?raw=true",
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nandirishav/trello-clone",
   },
   {
     name: "Airbnb-ish",
@@ -263,7 +289,7 @@ const projects = [
     ],
     image:
       "https://github.com/nandirishav/project-assets/blob/main/portfolio/airbnbIsh.jpg?raw=true",
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nandirishav/airbnb-2.0",
   },
   {
     name: "Amazon-ish",
@@ -285,34 +311,34 @@ const projects = [
     ],
     image:
       "https://github.com/nandirishav/project-assets/blob/main/portfolio/amazonIsh.jpg?raw=true",
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nandirishav/amazon-2.0",
   },
-  {
-    name: "Movies App",
-    description:
-      "React app displaying recent movies with IMDB ratings. Search movies, add favorites, and view them on favorites page.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux-toolkit",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://github.com/nandirishav/project-assets/blob/main/portfolio/moviesApp.jpg?raw=true",
-    source_code_link: "https://github.com/",
-  },
+  // {
+  //   name: "Movies App",
+  //   description:
+  //     "React app displaying recent movies with IMDB ratings. Search movies, add favorites, and view them on favorites page.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "redux-toolkit",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "material-ui",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "rest-api",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image:
+  //     "https://github.com/nandirishav/project-assets/blob/main/portfolio/moviesApp.jpg?raw=true",
+  //   source_code_link: "https://github.com/",
+  // },
 ];
 
 const socials = [
